@@ -24,7 +24,7 @@ class ViewController: UIViewController {
   @IBOutlet weak var score: UILabel!
   @IBOutlet weak var hiScore: UILabel!
   @IBOutlet weak var timerLabel: UILabel!
-  // gopher image from https://favpng.com/
+  // gopher image from https://favpng.com/ at https://favpng.com/png_view/groundhog-day-animal-figure-beaver-cartoon-png/BnER2tZb
   @IBOutlet weak var gopher1: UIImageView!
   @IBOutlet weak var gopher2: UIImageView!
   @IBOutlet weak var gopher3: UIImageView!
@@ -107,7 +107,6 @@ class ViewController: UIViewController {
   
   func swapVisibleGopher(randomNumber: Int) {
     let arrOfGophers = [gopher1, gopher2, gopher3, gopher4, gopher5, gopher6, gopher7, gopher8, gopher9]
-    print(randomNumber)
     // Removes remaining gopher if there are any from previous games.
     if gamesPlayed > 0 && gophersShown == 0 {
       arrOfGophers[lastSelectedGopher]!.isHidden = !arrOfGophers[lastSelectedGopher]!.isHidden
